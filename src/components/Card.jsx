@@ -6,9 +6,9 @@ function Card({ pokemon, image, onClick }) {
     }
 
     return (
-        <div onClick={handleClick}>
-            <img src={image} alt={pokemon} />
-            <div>{pokemon.name}</div>
+        <div onClick={handleClick} className="flex flex-col justify-evenly items-center py-16 px-8 bg-white hover:bg-gray-100 border-2 shadow-lg cursor-pointer">
+            <img src={image} alt={pokemon} className="w-44 h-44"/>
+            <div className="custom-font">{pokemon.name}</div>
         </div>
     )
 }

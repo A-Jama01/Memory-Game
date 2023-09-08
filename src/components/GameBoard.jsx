@@ -58,14 +58,14 @@ function GameBoard({ incrementScore, resetScore }) {
     }
 
     return (
-        <>
+        <div className='flex flex-row justify-center flex-wrap gap-16 mt-6 mx-60 border-0'>
             {pokemonList.map((pokemon) => {
                return (
                <div key={pokemon.name}>
                     <Card pokemon={pokemon} image={pokemon.imageUrl} onClick={handleClick} />
                </div>)
             })}
-        </>
+        </div>
     )
 }
 

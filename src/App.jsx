@@ -14,7 +14,8 @@ function App() {
   function resetScore() {
     setScore(0);
   }
-
+  
+  //Update highscore
   useEffect(() => {
     if (score > highScore) {
       setHighScore(score);
@@ -22,11 +23,11 @@ function App() {
   }, [score])
 
   return (
-    <>
+    <div>
       <NavBar />
       <ScoreBoard score={score} highScore={highScore} />
       <GameBoard incrementScore={incrementScore} resetScore={resetScore}/>
-    </>
+    </div>
   )
 }
 

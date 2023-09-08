@@ -1,0 +1,14 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+
+.custom-font {
+    font-family: 'Press Start 2P', sans;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(241 245 249);
+  }
